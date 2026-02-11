@@ -1,0 +1,328 @@
+VisualElement {
+}
+
+.bg {
+    background-image: url("project://database/Assets/Images/Fondo.png?fileID=2800000&guid=aa187c9b2f16dbc4581d1a881145c8f2&type=3#Fondo");
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(30, 44, 58);
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 12px;
+    widht: 100%;
+    height: 100%;
+    padding-left: 420px;
+    padding-top: 0;
+    margin-top: 150px;
+    position: absolute;
+    top: 300px;
+    right: 180px;
+}
+
+.menu-button {
+    width: 360px;
+    height: 64px;
+    padding-right: 16px;
+    padding-left: 16px;
+    align-items: center;
+    background-color: rgb(28, 40, 53);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-size: 24px;
+    -unity-font-definition: url("project://database/Assets/Fonts/Roboto-Bold.ttf?fileID=12800000&guid=22714ae6c5961394b9638c459c94b814&type=3#Roboto-Bold");
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: rgb(16, 21, 29);
+    margin-bottom: 10px;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.menu-button:hover {
+    background-color: rgb(36, 52, 72);
+    translate: 0 -2px;
+    cursor: pointer;
+    border-color: rgb(77, 108, 140);
+    scale: 1.1 1.1;
+}
+
+.menu-button:active {
+    background-color: rgb(49, 71, 90);
+    translate: 0 0;
+    border-color: rgb(10, 15, 22);
+}
+
+.title-main {
+    font-size: 96px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+}
+
+.menu-button-label {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+}
+
+.root {
+    width: 100%;
+    height: 100%;
+}
+
+.content-root {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu-icon {
+    background-size: 150% 150%;
+    left: -120px;
+    transition: transform 0.15s ease-in-out, opacity 0.15s ease-in-out;
+    opacity: 0.8;
+}
+
+.menu-icon:hover {
+    opacity: 0.8;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.menu-button:hover .menu-icon {
+    scale: 1.6 1.6;
+}
+
+.menu-button:active .menu-icon {
+    scale: 1.1 1.1;
+    translate: 18px 0;
+}
+
+.ninja {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 180px;
+    right: 260px;
+    opacity: 0.55;
+}
+
+.access-panel {
+     display: none;                 /* Se oculta al iniciar */
+    position: absolute;
+
+    /* MISMA ZONA QUE EL LAYOUT DE BOTONES */
+    top: 300px;
+    right: 180px;
+
+    width: 420px;
+    padding: 16px;
+    gap: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgba(28, 40, 53, 0.95);
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: rgb(16, 21, 29);
+}
+
+.access-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.access-row {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.access-label {
+    color: white;
+    font-size: 18px;
+    -unity-text-align: middle-center;
+    flex-grow: 1;
+}
+
+.access-btn {
+   width: 100px;
+    height: 48px;
+
+    background-color: rgb(28, 40, 53);
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: rgb(16, 21, 29);
+
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+
+    -unity-text-align: middle-center;
+}
+
+.access-btn-wide {
+    width: 100%;
+    height: 52px;
+    background-color: rgb(28, 40, 53);
+    color: white;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: rgb(16, 21, 29);
+}
+
+
+.access-btn:hover, .access-btn-wide:hover {
+    background-color: rgb(36, 52, 72);
+    border-color: rgb(77, 108, 140);
+    scale: 1.1 1.1;
+    cursor: pointer;
+}
+
+.access-button:active {
+    background-color: rgb(49, 71, 90);
+    scale: 1 1;
+}
+
+.access-toggle {
+    width: 100%;
+    height: 48px;
+
+    background-color: rgb(28, 40, 53);
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: rgb(16, 21, 29);
+
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+    -unity-text-align: middle-center;
+}
+
+.access-toggle:hover {
+    background-color: rgb(36, 52, 72);
+    border-color: rgb(77, 108, 140);
+}
+
+.access-close {
+    width: 100%;
+    height: 48px;
+
+    margin-top: 10px;
+
+    background-color: rgb(28, 40, 53);
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: rgb(16, 21, 29);
+
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+
+    -unity-text-align: middle-center;
+}
+
+/* ============================= */
+/* HIGH CONTRAST MODE */
+/* ============================= */
+
+.high-contrast .bg {
+    background-color: rgb(0, 0, 0);
+}
+
+.high-contrast .menu-button,
+.high-contrast .access-button,
+.high-contrast .access-toggle,
+.high-contrast .access-close {
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 0);
+}
+
+/* Hover también en contraste */
+.high-contrast .menu-button:hover,
+.high-contrast .access-button:hover,
+.high-contrast .access-toggle:hover,
+.high-contrast .access-close:hover {
+    background-color: rgb(20, 20, 20);
+    border-color: rgb(255, 255, 255);
+}
+
+/* Se activa cuando el root tiene la clase .high-contrast */
+.high-contrast .bg {
+    background-color: black;
+}
+
+.high-contrast .menu-button {
+    background-color: black;
+    border-color: white;
+}
+
+.high-contrast .menu-button-label,
+.high-contrast .title-main {
+    color: yellow;
+}
+
+/* Panel: que no “salte” al cambiar font-size */
+#AccessibilityPanel Button {
+    height: 56px;
+    min-height: 56px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Fila A- Text Size A+ estable */
+#TextSizeRow {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    height: 60px;
+   
+}
+
+/* A- y A+ con ancho fijo para que no se muevan */
+#TextDown, #TextUp {
+    height: 50px;
+    width: 90px;
+}
+
+#ToggleContrast {
+    height: 55px;
+}
+
+.preview-text {
+    unity-text-align: middle-center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+
+

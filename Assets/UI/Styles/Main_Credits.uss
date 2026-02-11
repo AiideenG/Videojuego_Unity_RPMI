@@ -1,0 +1,209 @@
+.content-root {
+    gap: 16px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.root {
+    width: 100%;
+    height: 100%;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-size: cover;
+}
+
+.credits-title {
+    -unity-font-definition: url("project://database/Assets/Fonts/Anton-Regular.ttf?fileID=12800000&guid=0ea0dd40268b2814aa2edd30f166513a&type=3#Anton-Regular");
+    font-size: 72px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: normal;
+    letter-spacing: 4px;
+    margin-bottom: 16px;
+    margin-top: 0;
+    top: 20px;
+}
+
+.credits-card {
+    width: 600px;
+    min-height: 70px;
+    background-color: rgb(28, 40, 53);
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: rgb(17, 25, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    margin-left: 6px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    top: -50px;
+}
+
+.credits-text {
+    -unity-font-definition: url("project://database/Assets/Fonts/Roboto-Bold.ttf?fileID=12800000&guid=22714ae6c5961394b9638c459c94b814&type=3#Roboto-Bold");
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: upper-center;
+}
+
+.credits-button {
+    width: 360px;
+    height: 64px;
+    padding-right: 16px;
+    padding-left: 16px;
+    align-items: center;
+    background-color: rgb(28, 40, 53);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-size: 24px;
+    -unity-font-definition: url("project://database/Assets/Fonts/Roboto-Bold.ttf?fileID=12800000&guid=22714ae6c5961394b9638c459c94b814&type=3#Roboto-Bold");
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: rgb(16, 21, 29);
+    margin-bottom: 10px;
+    justify-content: flex-start;
+    display: flex;
+    top: 60px;
+}
+
+.credits-button:hover {
+    background-color: rgb(36, 52, 72);
+    translate: 0 -2px;
+    cursor: pointer;
+    border-color: rgb(77, 108, 140);
+    scale: 1.1 1.1;
+}
+
+.credits-button:active {
+    background-color: rgb(49, 71, 90);
+    translate: 0 0;
+    border-color: rgb(10, 15, 22);
+}
+
+.icon-container {
+    background-size: 150% 150%;
+    left: -120px;
+    transition: transform 0.15s ease-in-out, opacity 0.15s ease-in-out;
+    opacity: 0.8;
+}
+
+.icon-container:hover {
+    opacity: 0.8;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.credits-button:hover .icon-container {
+    scale: 1.2 1.2;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.credits-button:active .icon-container {
+    -unity-background-scale-mode: scale-to-fit;
+    scale: 1.2 1.2;
+    translate: -20px 0;
+}
+
+.logo {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.audio-bar {
+    width: 360px;
+    height: 40px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    border: 1px solid rgb(17, 24, 38);
+    top: 20px;
+}
+
+.audio-icon {
+    width: 32px;
+    height: 32px;
+    background-image: url('Assets/Images/Icons/icon_play.png');
+     background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-shrink: 0;
+
+
+}
+
+.audio-timeline {
+    flex-grow: 1;
+    height: 6px;
+    border-radius: 3px;
+    background-color: rgb(31, 41, 51);
+    overflow: hidden;
+}
+
+.audio-progress {
+    height: 100%;
+    width: 0%;
+    border-radius: 3px;
+    background-color: rgb(250, 204, 107);
+}
+
+.ninja {
+    width: 400px;
+    height: 240px;
+    position: absolute;
+    right: 40px;
+    bottom: 160px;
+    background-image: url('Assets/Images/Ninja.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.audio-icon:hover {
+    scale: 2 2 2;
+    -unity-background-image-tint-color: rgb(250, 204, 107);
+}
+
+.audio.icon:active {
+    scale: 1.55 1.55 1.55;
+    opacity: 0.4;
+}
+
+.audio-icon.play {
+    background-image: url("Assets/Images/Icons/icon_play.png");
+}
+
+.audio-icon.pause {
+    background-image: url("Assets/Images/Icons/icon_pause.png");
+}
